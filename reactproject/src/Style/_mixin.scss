@@ -1,0 +1,6 @@
+@mixin onecode($par1,$par2)
+{
+    display: flex;
+    justify-content: $par2;
+    letter-spacing: $par1;
+}

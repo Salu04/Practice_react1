@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-class ul {
+  display: flex;
+  justify-content: space-around;
+  letter-spacing: 0.3rem;
+  list-style: none;
+}
+
+.nvabar-text {
+  font-size: 25px;
+  color: green;
+  text-decoration: none;
+}
+.nvabar-text:hover {
+  color: black;
+  text-shadow: 2px 2px 2px gray;
+}
+
+.product-class {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0;
+  width: 100%;
+  height: 100px;
+  background-color: pink;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 20px;
+}
+
+.product-class h1 {
+  color: green;
+}
+.product-class h1::before {
+  content: " .. ";
+}
+.product-class h1::after {
+  content: " .. ";
+}/*# sourceMappingURL=main.css.map */

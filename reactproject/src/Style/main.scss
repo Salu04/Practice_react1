@@ -1,0 +1,69 @@
+// sass - first we have sass (css preprocessor )
+// scss - after css3 we have scss 
+
+
+//operator :  we can use operator in that scss ( + / - etc)
+//variable : we can assign value to vaiable if we want to use multiple time same.
+//nesting : we can use nesting in block 
+//mixin : to avoid repetation 
+//parameter  : we can pass parametr to mixin if we want some diff css to other
+//partial : we can add mixin on another file and then we can import them so code will be readable.
+   // eg. _ is compulsory to start with file name
+
+@import "mixin";
+@import "var";
+
+*
+{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+.navbar-class ul 
+{
+    @include onecode(0.3rem,space-around );
+   list-style: none ;  
+}
+
+.nvabar-text
+{
+    font-size: 20px + 5px;
+     color : $t_color;
+     text-decoration: none;
+
+     &:hover
+        {
+            color : $hovert_color;
+            text-shadow: 2px 2px 2px gray;
+        }
+   
+}
+
+.product-class
+{
+    @include onecode(0,center);
+
+    width : 100%;
+    height : 100px;
+    background-color: pink ;
+     
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+    margin-top : 20px;
+}
+
+.product-class h1
+{
+    color : $t_color;
+    &::before{
+        content : " .. ";
+    }
+    &::after{
+        content : " .. ";
+    }
+}
+ 
+
+ 
