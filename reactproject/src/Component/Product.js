@@ -6,6 +6,7 @@ export const Product = () => {
     <div className="product-class">
       <h1>Product Component</h1>
       <p>Please search product </p>
+      <p>Hi I am saloni in learning phase now ia m going to chnage this</p>
     </div>
   )
 }

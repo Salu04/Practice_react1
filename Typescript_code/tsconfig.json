@@ -1,0 +1,12 @@
+{
+    "compilerOptions":{
+        "allowJs": true,
+        "checkJs" : true,
+        // created ouer directory for compliled files
+        "outDir":"./build",
+        "rootDir": "./src",
+        // taking newer version 
+        "target" : "esnext"
+    },
+    
+}
