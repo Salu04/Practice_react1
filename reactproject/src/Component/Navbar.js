@@ -15,13 +15,16 @@ const Navbar = () => {
                 <Link to="/about" className="nvabar-text">About</Link>
             </li>
             <li >
-                <Link to="/contact" className="nvabar-text">Contact</Link>
+                <Link to="/contact" className="nvabar-text">call</Link>
             </li>
             <li style={{ display : logstatus ? "none" : "block" }}>
                 <Link to="/login" className="nvabar-text">Login</Link>
             </li>
             <li style={{ display : logstatus ? "block" : "none" }}>
                 <Link to="/login" className="nvabar-text">Logout</Link>
+            </li>
+            <li style={{ display : logstatus ? "block" : "none" }}>
+                <Link to="/" className="nvabar-text">about</Link>
             </li>
         </ul>
     </div>
